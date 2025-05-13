@@ -35,7 +35,7 @@ def get_db_row(item: Data):
     data = dict(item)
 
     # Send the data to Kafka
-    producer.send(KAFKA_TOPIC, value=data)
+    producer.send(topic = KAFKA_TOPIC, value = data)
 
     return item
 
